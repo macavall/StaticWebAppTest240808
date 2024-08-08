@@ -14,9 +14,9 @@
   </main>
 
   <script>
-    const apiUrl = process.env.REACT_APP_API_URL;
+    const apiUrl = '<%= process.env.REACT_APP_API_URL %>';
     var h1 = document.getElementById("textid");
-    h1.innerText = h1;
+    h1.innerText = apiUrl || "API URL not found";
   </script>
 </body>
 
