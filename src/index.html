@@ -10,8 +10,14 @@
 
 <body>
   <main>
-    <h1>Vanilla JavaScript App</h1>
+    <h1 id="textid">Vanilla JavaScript App</h1>
   </main>
+
+  <script>
+    const apiUrl = process.env.REACT_APP_API_URL;
+    var h1 = document.getElementById("textid");
+    h1.innerText = h1;
+  </script>
 </body>
 
 </html>
