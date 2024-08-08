@@ -13,10 +13,11 @@
     <h1 id="textid">Vanilla JavaScript App</h1>
   </main>
 
+  <!-- Injecting environment variable -->
   <script>
-    const apiUrl = '<%= process.env.REACT_APP_API_URL %>';
-    var h1 = document.getElementById("textid");
-    h1.innerText = apiUrl || "API URL not found";
+    // Accessing the environment variable
+    const apiUrl = "%MY_API_URL%"; // This will be replaced with the actual value
+    document.getElementById("textid").innerText = `API URL: ${apiUrl}`;
   </script>
 </body>
 
